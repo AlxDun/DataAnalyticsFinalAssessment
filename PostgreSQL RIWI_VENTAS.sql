@@ -35,7 +35,7 @@ CREATE TABLE Venta (
     ID_Producto INT NOT NULL REFERENCES Producto(ID_Producto),
 	ID_Ciudad INT NOT NULL REFERENCES Ciudad(ID_Ciudad),
     
-    Fecha DATE NOT NULL,
+    Fecha DATE,
     Tipo_Producto VARCHAR(255),
     Cantidad NUMERIC NOT NULL,
     Precio_Unitario NUMERIC NOT NULL,
